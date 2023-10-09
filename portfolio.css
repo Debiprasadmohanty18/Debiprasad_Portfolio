@@ -1,0 +1,575 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gabarito:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Gabarito:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Gabarito:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Autour+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Fredericka+the+Great&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Fredericka+the+Great&family=Josefin+Sans&display=swap');
+
+
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    color: white;
+    scroll-behavior: smooth;
+}
+
+#header {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+}
+
+.head-content {
+    height: 16vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 3rem;
+    position: fixed;
+    z-index: 1;
+}
+
+.head-content li {
+    position: relative;
+    list-style: none;
+}
+
+.head-content li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: yellow;
+    font-family: 'Poppins', sans-serif;
+}
+
+.head-content li a::after {
+    content: '';
+    position: absolute;
+    left: 1px;
+    bottom: -6px;
+    width: 100%;
+    height: 3px;
+    background: green;
+    border-radius: 10%;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.5s;
+}
+
+.head-content li a:hover::after {
+    transform-origin: left;
+    transform: scaleX(1);
+}
+
+.left-side,.right-side {
+    height: 100vh;
+}
+
+.left-side {
+    width: 70%;
+    background-color: rgb(5, 5, 40);
+    display: flex;
+}
+
+.right-side {
+    width: 30%;
+    background: linear-gradient(-45deg , skyblue , rgb(5, 5, 40)80%);
+}
+
+.icon-space {
+    height: 100vh;
+    width: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 3rem;
+}
+
+.icon-space i {
+    font-size: 30px;
+    color: rgb(247, 231, 156);
+}
+
+.icon-space i:hover {
+    background: linear-gradient(rgb(241, 3, 43),skyblue);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+#text {
+    height: 100vh;
+    width: 600px;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#text h2 span {
+    background: linear-gradient(aqua,red,yellow);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+#text h1 {
+    line-height: 80px;
+    font-size: 40px;
+}
+
+.profession {
+    background: linear-gradient(green,orange);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+#text p {
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+.button {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+}
+
+#btn1 {
+    padding:15px 30px;
+    margin-left: 20px;
+    margin-top: 50px;
+    border-radius: 15px;
+    color: black;
+    border-style: none;
+    font-family: 'Gabarito', cursive;
+    cursor: pointer;
+    background-color: rgb(247, 47, 80);
+}
+
+#btn1:hover {
+    color: white;
+    scale: 1.02;   
+}
+
+#btn2 {
+    padding:15px 30px;
+    margin-left: 40px;
+    margin-top: 50px;
+    border-radius: 15px;
+    color: black;
+    border-style: none;
+    font-family: 'Gabarito', cursive;
+}
+
+#btn2:hover {
+    cursor: pointer;
+    color: white;
+    background-color: rgb(247, 47, 80);
+    scale: 1.02;
+}
+
+.photo-place {
+    width: 450px;
+    height: 450px;
+    background: linear-gradient(90deg , transparent  50%, rgb(5, 5, 40) 50%);
+    border-radius: 50%;
+    position: absolute;
+    top: 150px;
+    left: 55.2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle1 {
+    height: 350px;
+    width: 350px;
+    background-color: green;
+    background: url("Profile4.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    border: 1rem solid white;
+    box-shadow: 0 0 1rem white,
+    inset 0 0 1rem white,
+    0 0 2rem skyblue,
+    inset 0 0 2rem skyblue,
+    0 0 4rem skyblue,
+    inset 0 0 4rem skyblue
+    ;
+}
+
+/* About Me Page */
+
+#about-me {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    position: relative;
+}
+
+.left-text , .right-text {
+    height: 100vh;
+}
+
+.left-text {
+    width: 70%;
+    background-color: rgb(5, 5, 40);
+}
+
+.right-text {
+    width: 30%;
+    background: linear-gradient(to bottom , skyblue , rgb(5,5,40));
+}
+
+.left-text h1 {
+    margin-top: 200px;
+    margin-left: 100px;
+    font-size: 40px;
+}
+
+.left-text p {
+    margin-top: 10px;
+    margin-left: 100px;
+    margin-right: 250px;
+    font-size: 20px;
+}
+
+.photo-place1 {
+    width: 450px;
+    height: 450px;
+    background: linear-gradient(90deg , transparent  50%, rgb(5, 5, 40) 50%);
+    border-radius: 50%;
+    position: absolute;
+    top: 150px;
+    left: 55.2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle2 {
+    height: 350px;
+    width: 350px;
+    background-color: green;
+    background: url("me.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    border: 1rem solid white;
+    box-shadow: 0 0 1rem white,
+    inset 0 0 1rem white,
+    0 0 2rem skyblue,
+    inset 0 0 2rem skyblue,
+    0 0 4rem skyblue,
+    inset 0 0 4rem skyblue
+    ;
+}
+
+
+
+
+
+
+/* Education Page */
+
+
+#education {
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(rgb(5,5,40),skyblue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#education .flipping {
+    margin-top: 13%;
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+}
+
+#education .flipping .front-side {
+    width: 80%;
+    height: 90%;
+    background: linear-gradient(rgb(143, 78, 186),rgb(94, 81, 184));
+    border-radius: 15px;
+    cursor: pointer;
+    position: relative;
+    transform: rotateY(0deg);
+    transition: transform .5s linear 0s;
+}
+
+.box {
+    height: 60%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-box {
+    height: 200px;
+    width: 200px;
+}
+
+.text-area {
+    width: 100%;
+    height: 40%;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-area h1 {
+    font-size: 50px;
+    color: rgb(176, 245, 2);
+}
+
+.back-side {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: gray;
+    padding: 20px;
+    transform: rotateY(180deg);
+    transition: transform 0.4s linear 0s;
+    backface-visibility: hidden;
+    border-radius: 15px;
+}
+
+.back-side h3 {
+    margin-top: 15%;
+    margin-left: 5%;
+    font-size: 20px;
+    font-family: 'Autour One', cursive;
+    color:rgb(0, 26, 0);
+}
+
+.front-side:hover > .box .image-box .text-area .mytext {
+    transform: rotateY(-180deg);
+}
+
+.front-side:hover > .back-side {
+    transform: rotateY(0deg);
+}
+
+/* Project Page */
+
+
+#project {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgb(5,5,40),skyblue);
+}
+
+#project-section {
+    width: 100%;
+    height: 13%;
+}
+
+.phase1 {
+    height: 87%;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-around;
+}
+
+.project1 {
+    height: 280px;
+    width: 30%;
+    background-color: aqua;
+}
+
+.project2 {
+    height: 350px;
+    width: 30%;
+    background-color:dodgerblue;
+}
+
+.project3 {
+    height: 280px;
+    width: 30%;
+    background-color: red;
+}
+.project4 {
+    height: 290px;
+    width: 30%;
+    background-color: blue;
+}
+
+.project5 {
+    height: 279px;
+    width: 30%;
+    margin-top: 10px;
+    background-color: white;
+}
+.project6 {
+    height: 290px;
+    width: 30%;
+    background-color: black;
+}
+
+.project-ss {
+    height: 100%;
+    width: 100%;
+}
+
+
+/* Contact Page */
+
+
+#contact {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgb(5,5,40),skyblue);
+}
+
+.container {
+    display: flex;
+}
+
+.contact-side {
+    height: 92vh;
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left-part {
+    height: 400px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 45px;
+}
+
+.left-part h1 {
+    font-size: 60px;
+    margin-bottom: 5%;
+    font-family: 'Berkshire Swash', cursive;
+    font-family: 'Fredericka the Great', cursive;
+    color: black;
+}
+
+.left-part p i {
+    color:rgb(0, 46, 0);
+    margin-right: 20px;
+}
+
+.left-part p a {
+    text-decoration: none;
+}
+
+
+.left-part p {
+    color: rgb(223, 220, 220);
+    font-size: 20px;
+    margin-right: 50px;
+    font-family: 'Berkshire Swash', cursive;
+    font-family: 'Fredericka the Great', cursive;
+    font-family: 'Josefin Sans', sans-serif;
+   
+}
+
+.social-icon i{
+    font-size: 25px;
+    margin: 10px 20px;
+    color: blue;
+}
+
+.social-icon i:hover {
+    background: linear-gradient(red,black);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+
+.form-side {
+    height: 92vh;
+    width: 60%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.form-part {
+    height: 450px;
+    width: 80%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 20px;
+}
+
+form input,form textarea {
+
+    width: 90%;
+    border: 0;
+    outline: none;
+    background-color: #262626;
+    padding: 20px;
+    margin: 15px 35px;
+    border-radius: 6px;
+    font-size: 20px;
+    font-family: 'Berkshire Swash', cursive;
+    font-family: 'Fredericka the Great', cursive;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+form button{
+    padding: 15px 40px;
+    color: black;
+    opacity: 0.6;
+    border-radius: 10px;
+    border-style: none;
+    cursor: pointer;
+    font-family: 'Gabarito', cursive;
+    margin-top: 20px;
+    margin-left: 40%;
+}
+
+form button:hover {
+    background-color: rgb(247, 47, 80);
+    color: white;
+    scale: 1.02;
+}
+
+/* Copyright Section */
+
+#copyright {
+    height: 8%;
+    width: 100%;
+    background-color: #262626;
+}
+
+#copyright p {
+    text-align: center;
+    padding: 10px 0;
+}
+
+#copyright p i {
+    color: crimson;
+}
+
